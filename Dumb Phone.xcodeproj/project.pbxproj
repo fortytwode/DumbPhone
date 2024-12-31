@@ -6,11 +6,62 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		121983A02D24730600D65460 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128587162D2425BE00040152 /* WidgetKit.framework */; };
+		121983A12D24730600D65460 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128587182D2425BE00040152 /* SwiftUI.framework */; };
+		121983B22D24730800D65460 /* Dumbphone WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1219839F2D24730600D65460 /* Dumbphone WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		121983B02D24730800D65460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 128586F42D2424E000040152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1219839E2D24730600D65460;
+			remoteInfo = "Dumbphone WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1285872F2D2425C100040152 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				121983B22D24730800D65460 /* Dumbphone WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1219839F2D24730600D65460 /* Dumbphone WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dumbphone WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		128586FC2D2424E000040152 /* Dumb Phone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dumb Phone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		128587162D2425BE00040152 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		128587182D2425BE00040152 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		121983B32D24730800D65460 /* Exceptions for "Dumbphone Widget" folder in "Dumbphone WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1219839E2D24730600D65460 /* Dumbphone WidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		121983A22D24730600D65460 /* Dumbphone Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				121983B32D24730800D65460 /* Exceptions for "Dumbphone Widget" folder in "Dumbphone WidgetExtension" target */,
+			);
+			path = "Dumbphone Widget";
+			sourceTree = "<group>";
+		};
 		128586FE2D2424E000040152 /* Dumb Phone */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Dumb Phone";
@@ -19,6 +70,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1219839C2D24730600D65460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121983A12D24730600D65460 /* SwiftUI.framework in Frameworks */,
+				121983A02D24730600D65460 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		128586F92D2424E000040152 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				128586FE2D2424E000040152 /* Dumb Phone */,
+				121983A22D24730600D65460 /* Dumbphone Widget */,
+				128587152D2425BE00040152 /* Frameworks */,
 				128586FD2D2424E000040152 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,13 +103,45 @@
 			isa = PBXGroup;
 			children = (
 				128586FC2D2424E000040152 /* Dumb Phone.app */,
+				1219839F2D24730600D65460 /* Dumbphone WidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		128587152D2425BE00040152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				128587162D2425BE00040152 /* WidgetKit.framework */,
+				128587182D2425BE00040152 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1219839E2D24730600D65460 /* Dumbphone WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 121983B42D24730800D65460 /* Build configuration list for PBXNativeTarget "Dumbphone WidgetExtension" */;
+			buildPhases = (
+				1219839B2D24730600D65460 /* Sources */,
+				1219839C2D24730600D65460 /* Frameworks */,
+				1219839D2D24730600D65460 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				121983A22D24730600D65460 /* Dumbphone Widget */,
+			);
+			name = "Dumbphone WidgetExtension";
+			packageProductDependencies = (
+			);
+			productName = "Dumbphone WidgetExtension";
+			productReference = 1219839F2D24730600D65460 /* Dumbphone WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		128586FB2D2424E000040152 /* Dumb Phone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1285870A2D2424E200040152 /* Build configuration list for PBXNativeTarget "Dumb Phone" */;
@@ -55,10 +149,12 @@
 				128586F82D2424E000040152 /* Sources */,
 				128586F92D2424E000040152 /* Frameworks */,
 				128586FA2D2424E000040152 /* Resources */,
+				1285872F2D2425C100040152 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				121983B12D24730800D65460 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				128586FE2D2424E000040152 /* Dumb Phone */,
@@ -80,6 +176,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					1219839E2D24730600D65460 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					128586FB2D2424E000040152 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				128586FB2D2424E000040152 /* Dumb Phone */,
+				1219839E2D24730600D65460 /* Dumbphone WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1219839D2D24730600D65460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		128586FA2D2424E000040152 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +222,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1219839B2D24730600D65460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		128586F82D2424E000040152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +238,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		121983B12D24730800D65460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1219839E2D24730600D65460 /* Dumbphone WidgetExtension */;
+			targetProxy = 121983B02D24730800D65460 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		121983B52D24730800D65460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56PU6YD8LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dumbphone Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dumbphone Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketship.dumbphone.Dumbphone-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		121983B62D24730800D65460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56PU6YD8LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dumbphone Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dumbphone Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketship.dumbphone.Dumbphone-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		128587082D2424E200040152 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -265,7 +441,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketship.dumbphone.Dumb-Phone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketship.dumbphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketship.dumbphone.Dumb-Phone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketship.dumbphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,6 +481,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		121983B42D24730800D65460 /* Build configuration list for PBXNativeTarget "Dumbphone WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121983B52D24730800D65460 /* Debug */,
+				121983B62D24730800D65460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		128586F72D2424E000040152 /* Build configuration list for PBXProject "Dumb Phone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
