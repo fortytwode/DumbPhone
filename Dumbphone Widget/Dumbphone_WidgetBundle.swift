@@ -12,7 +12,5 @@ import SwiftUI
 struct Dumbphone_WidgetBundle: WidgetBundle {
     var body: some Widget {
         Dumbphone_Widget()
-        Dumbphone_WidgetControl()
-        Dumbphone_WidgetLiveActivity()
     }
 }

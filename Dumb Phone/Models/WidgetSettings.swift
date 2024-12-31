@@ -21,4 +21,4 @@ class WidgetSettings: ObservableObject {
             UserDefaults.standard.set(encoded, forKey: "selectedShortcuts")
         }
     }
-} 
+}

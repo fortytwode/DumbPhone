@@ -51,12 +51,6 @@ struct Dumbphone_WidgetEntryView : View {
 
     var body: some View {
         VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
-            
             ForEach(entry.shortcuts) { shortcut in
                 if let url = URL(string: shortcut.urlScheme) {
                     Link(destination: url) {
@@ -94,11 +88,4 @@ extension ConfigurationAppIntent {
         intent.favoriteEmoji = "🤩"
         return intent
     }
-}
-
-#Preview(as: .systemSmall) {
-    Dumbphone_Widget()
-} timeline: {
-    SimpleEntry(date: .now, shortcuts: <#[SharedTypes.AppShortcut]#>, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
 }

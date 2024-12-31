@@ -51,6 +51,13 @@
 			);
 			target = 1219839E2D24730600D65460 /* Dumbphone WidgetExtension */;
 		};
+		242E03CB2D2488EC009642A2 /* Exceptions for "Dumb Phone" folder in "Dumbphone WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/SharedTypes.swift,
+			);
+			target = 1219839E2D24730600D65460 /* Dumbphone WidgetExtension */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -64,6 +71,9 @@
 		};
 		128586FE2D2424E000040152 /* Dumb Phone */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				242E03CB2D2488EC009642A2 /* Exceptions for "Dumb Phone" folder in "Dumbphone WidgetExtension" target */,
+			);
 			path = "Dumb Phone";
 			sourceTree = "<group>";
 		};

@@ -35,6 +35,7 @@ struct ContentView: View {
                     }
                     .padding()
                 }
+                .buttonStyle(.plain)
                 
                 Section("Widget Instructions") {
                     VStack(alignment: .leading, spacing: 10) {
