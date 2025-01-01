@@ -31,6 +31,6 @@ public extension SharedTypes.AppShortcut {
         SharedTypes.AppShortcut(name: "Files", urlScheme: "shareddocuments://", iconName: "folder.fill"),
         SharedTypes.AppShortcut(name: "Shortcuts", urlScheme: "shortcuts://photos", iconName: "square.3.layers.3d.middle.filled"),
         SharedTypes.AppShortcut(name: "Messages", urlScheme: "sms://", iconName: "message.fill"),
-        SharedTypes.AppShortcut(name: "Camera", urlScheme: "photos-redirect://", iconName: "camera.fill")
+        SharedTypes.AppShortcut(name: "Photos", urlScheme: "photos-redirect://", iconName: "camera.fill")
     ]
 }
