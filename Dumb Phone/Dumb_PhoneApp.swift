@@ -12,6 +12,9 @@ struct Dumb_PhoneApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL { url in
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
         }
     }
 }
