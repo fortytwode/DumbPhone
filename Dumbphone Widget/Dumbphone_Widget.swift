@@ -50,17 +50,27 @@ struct Dumbphone_WidgetEntryView : View {
     let entry: SimpleEntry
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 12) {
             ForEach(entry.shortcuts) { shortcut in
-                if let url = URL(string: shortcut.urlScheme) {
-                    Link(destination: url) {
-                        HStack {
-                            Image(systemName: shortcut.iconName)
-                            Text(shortcut.name)
-                        }
+                Button(intent: getIntent(scheme: shortcut.urlScheme)) {
+                    HStack {
+                        Image(systemName: shortcut.iconName)
+                        Text(shortcut.name)
+                            .font(.headline)
                     }
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .buttonStyle(.plain)
             }
+            Spacer()
+        }
+    }
+    
+    private func getIntent(scheme: String) -> any AppIntent {
+        if #available(iOS 18, *) {
+            return OpenMyUrlIntent(value: scheme)
+        } else {
+            return OpenMyUrlIntentLowerIOS(value: scheme)
         }
     }
 }
@@ -73,6 +83,7 @@ struct Dumbphone_Widget: Widget {
             Dumbphone_WidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
+        .supportedFamilies([.systemLarge])
     }
 }
 

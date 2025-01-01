@@ -28,8 +28,9 @@ public enum SharedTypes {
 public extension SharedTypes.AppShortcut {
     static let defaultShortcuts = [
         SharedTypes.AppShortcut(name: "Phone", urlScheme: "tel://", iconName: "phone.fill"),
+        SharedTypes.AppShortcut(name: "Files", urlScheme: "shareddocuments://", iconName: "folder.fill"),
+        SharedTypes.AppShortcut(name: "Shortcuts", urlScheme: "shortcuts://photos", iconName: "square.3.layers.3d.middle.filled"),
         SharedTypes.AppShortcut(name: "Messages", urlScheme: "sms://", iconName: "message.fill"),
         SharedTypes.AppShortcut(name: "Camera", urlScheme: "photos-redirect://", iconName: "camera.fill")
     ]
 }
-

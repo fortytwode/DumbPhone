@@ -13,7 +13,7 @@ struct Dumb_PhoneApp: App {
         WindowGroup {
             ContentView()
                 .onOpenURL { url in
-                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    UIApplication.shared.open(url)
                 }
         }
     }
